@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Asar&display=swap');
+
+body{
+    margin: 0;
+}
+
+
+#container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0.2fr 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 0.1fr 1.5fr 1fr 0.5fr;
+    grid-template-areas: 
+    "head head head head"
+    "nav h1 h1 h1"
+    "nav card1 card1 card1"
+    "nav card2 card3 card3"
+    "foot foot foot foot";
+
+}
+
+#container > h1{
+    grid-area:h1;
+    display: flex;
+    justify-content: center;
+}
+
+
+#container > header{
+    grid-area:head;
+    display: flex;
+    justify-content: center;
+}
+
+#container > header > img{
+    width: 25%;
+}
+
+#container > nav{
+    grid-area:nav;
+}
+
+#container > nav > ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+#container > .card1{
+    grid-area:card1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#container > .card1 > img {
+    width: 25%;
+}
+
+#container > .card2{
+    grid-area:card2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#container > .card2 > img {
+    width: 25%;
+}
+
+#container > .card3{
+    grid-area:card3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#container > .card3 > img {
+    width: 25%;
+}
+
+#container > footer{
+    grid-area:foot;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+#container > footer > .social-media > img{
+    width: 25%;
+}
+
+
+@media only screen and (max-width: 550px){
+    #container{
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 0.5fr 1fr 1fr 1fr 0.3fr;
+        grid-template-areas: 
+        "head"
+        "nav"
+        "h1"
+        "card1"
+        "card2"
+        "card3"
+        "foot";
+    }
+}
