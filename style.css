@@ -118,3 +118,34 @@ body{
         "foot";
     }
 }
+
+@keyframes primeranimacion{
+  0%{width: 100%;}
+  20%{transform: rotate(360deg);}
+  40%{width: 100%;}
+  60%{transform: skewX(60deg);}
+  80%{transform: scale(1.5,1.5);}
+  100%{width: 100%;}
+}
+
+.primera {
+    animation-name: primeranimacion;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-delay: 3s;
+}
+
+
+@keyframes desaparecer {
+    0%{opacity: 100%;}
+    50%{opacity: 0;}
+    100%{opacity: 100%;}
+}
+
+h1 {
+    animation-name: desaparecer;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
