@@ -119,35 +119,29 @@ body{
     }
 }
 
-@keyframes primeranimacion{
-  0%{width: 100%;}
-  20%{transform: rotate(360deg);}
-  40%{width: 100%;}
-  60%{transform: skewX(60deg);}
-  80%{transform: scale(1.5,1.5);}
-  100%{width: 100%;}
+
+
+
+.card1:hover{
+    transform: scale(1.1);
+    transition: all 4s;
+    transform: translateX(-150px);
 }
 
-.primera {
-    animation-name: primeranimacion;
-    animation-duration: 5s;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-delay: 3s;
+.primera:hover{
+    transform: scale(1.1);
+    transition: all 4s;
 }
 
 
-@keyframes desaparecer {
-    0%{opacity: 100%;}
-    50%{opacity: 0;}
-    100%{opacity: 100%;}
+.card3:hover{
+    transform: scale(1.1);
+    transition: all 4s;
+    transform: translateX(-60px);
 }
 
-h1 {
-    animation-name: desaparecer;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
+.card2:hover{
+    transform: scale(1.1);
+    transition: all 4s;
+    transform: translateX(-50px);
 }
-
-
